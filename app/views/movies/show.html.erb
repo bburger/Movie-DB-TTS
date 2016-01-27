@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+
+<div class="thumbnail">
+  <h2>
+  
+  <Strong><center><%= @movie.name %></center></strong>
+  </h2>
+  <img src="<%= @movie.poster %>">
+</div>
+
+
+
+<p>
+  <strong>Description:</strong>
+  <%= @movie.description %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @movie.rating %>
+</p>
+
+<p>
+  <strong>Stars:</strong>
+  <%= @movie.stars %>
+</p>
+
+<p>
+  <strong>Genre:</strong>
+  <%= @movie.genre.name %>
+</p>
+
+<p>
+  <strong>Actor:</strong>
+  <%= @movie.actor.name %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @movie.year %>
+</p>
+
+<p>
+  <strong>Runtime:</strong>
+  <%= @movie.runtime %>
+  minutes
+</p>
+
+<%= link_to 'Edit', edit_movie_path(@movie) %> |
+<%= link_to 'Back', movies_path %>
